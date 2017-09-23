@@ -6,7 +6,33 @@ package com.example.ravinderreddy.sqliteauthentication;
 
 public class ModelClass
 {
-    String name, email,mobilenum,dob,phnum,pwd,confirmpwd;
+
+    String  id;
+    String name;
+    String email;
+    String mobilenum;
+    String dob;
+    String phnum;
+    String pwd;
+    String confirmpwd;
+
+    public String getUpdatepwd() {
+        return updatepwd;
+    }
+
+    public void setUpdatepwd(String updatepwd) {
+        this.updatepwd = updatepwd;
+    }
+
+    String updatepwd;
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
 
     public String getName() {
         return name;

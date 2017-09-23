@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center_vertical"
     android:padding="15dp"
-    tools:context="com.example.ravinderreddy.sqliteauthentication.MainActivity">
+    tools:context="com.example.ravinderreddy.sqliteauthentication.LoginActivity">
     <EditText
         android:id="@+id/editTextUserName"
         android:hint="User Name"
@@ -24,17 +24,24 @@
         android:hint="Password"
         android:inputType="textPassword" />
     <Button
-        android:id="@+id/buttonCreateAccount"
+        android:id="@+id/btn_signin"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="true"
         android:text="sing in"
         android:layout_marginBottom="60dp" />
     <Button
-        android:id="@+id/buttonSignupAccount"
+        android:id="@+id/btn_singup"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Create Account"
         android:layout_marginBottom="60dp" />
+    <Button
+        android:id="@+id/viewData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="View Data"
+        android:layout_marginBottom="60dp" />
+
 
 </LinearLayout>

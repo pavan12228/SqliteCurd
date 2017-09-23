@@ -10,7 +10,8 @@
         android:id="@+id/editTextUserName"
         android:hint="User Name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:text="pavan">
 
         <requestFocus />
     </EditText>
@@ -18,6 +19,7 @@
     <EditText
         android:id="@+id/editTextEmail"
         android:hint="Email"
+        android:text="pavan@gmail.com"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -27,6 +29,7 @@
         android:id="@+id/editTextMobileNumber"
         android:hint="Mobile Number"
         android:inputType="number"
+        android:text="8125003176"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -35,6 +38,7 @@
     <EditText
         android:id="@+id/editTextDob"
         android:hint="DOB"
+        android:text="13/05/1994"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -47,6 +51,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
+        android:text="pavan"
         android:inputType="textPassword" />
 
     <EditText
@@ -54,6 +59,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="Confirm Password"
+        android:text="pavan"
         android:inputType="textPassword" />
 
     <Button

@@ -108,13 +108,6 @@ public class SignupActivity extends AppCompatActivity {
                 String edpass = pass.getText().toString();
                 String edConf = confpass.getText().toString();
 
-                /*ProgressDialog progressDialog=new ProgressDialog(getApplicationContext());
-                progressDialog.setMessage("loading...");
-                progressDialog.setCancelable(false);
-                progressDialog.show();
-*/
-
-
                 if (edfirst.length() < 4 | edfirst.length() > 8) {
                     Toast.makeText(SignupActivity.this,"Please enter username between 4 and 8  charecters long", Toast.LENGTH_SHORT).show();
                     } else if (!signupEmail(etemail)) {
@@ -134,23 +127,14 @@ public class SignupActivity extends AppCompatActivity {
                      modelClass.setMobilenum(etmobile);
                      modelClass.setDob(time);
                      modelClass.setPwd(edpass);
-                     modelClass.setConfirmpwd(edConf);
-                   //  modelClasses=new ArrayList<ModelClass>();
-                     Log.d("model",""+modelClass);
                      db.insert(modelClass);
                      Cursor cursor= db.retrieveData();
                      Log.d("count",""+cursor.getCount());
-
                      if (cursor.getCount()>0){
                          Toast.makeText(SignupActivity.this, "Succesfully created account!!!", Toast.LENGTH_SHORT).show();
-                         startActivity(new Intent(getApplicationContext(),MainActivity.class));
-
+                         startActivity(new Intent(getApplicationContext(),LoginActivity.class));
                      }
-
                 }
-
-
-
             }
 
 
